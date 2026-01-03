@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  transition: background 0.5s;
+}
+
+body.light {
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  color: #000;
+}
+
+body.dark {
+  background: linear-gradient(to right, #232526, #414345);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  background: #4facfe;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #00f2fe;
+}
+
+.weather-now,
+.forecast {
+  margin-top: 20px;
+}
+
+#weather-icon {
+  width: 80px;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast-day {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 12px;
+  min-width: 80px;
+}
+
+.history {
+  margin-top: 10px;
+}
+
+.history button {
+  background: #ccc;
+  margin: 3px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
